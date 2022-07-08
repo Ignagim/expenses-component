@@ -1,0 +1,49 @@
+.chart__days {
+    background-color: $color-primary-1;
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    p {
+        position: absolute;
+        bottom: -35px;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-secondary-1;
+    }
+    &:hover {
+        background-color: $color-primary-1-light;
+    }
+    &--amount {
+        display: none;
+    }
+}
+
+.chart__days--max {
+    background-color: $color-primary-2;
+    &:hover {
+        background-color: $color-primary-2-light;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .chart__days {
+        width: 60px;
+        &--amount {
+            display: block;
+            background: $color-secondary-1;
+            width: 120%;
+            position: absolute;
+            left: -10%;
+            top: -30px;
+            text-align: center;
+            color: $color-light-1;
+            height: 24px;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+        margin-left: 5px;
+        text-align: left;
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+    &__charts {
+        display: flex; 
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .week__charts {
+        justify-content: space-evenly;
+    }
+}

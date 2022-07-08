@@ -1,0 +1,21 @@
+$color-primary-1: hsl(10, 79%, 65%);
+$color-primary-1-light: hsla(10, 79%, 65%, 0.753);
+$color-primary-2: hsl(186, 34%, 60%);
+$color-primary-2-light: hsla(186, 34%, 60%, 0.753);
+$color-secondary-1: hsl(25, 47%, 15%);
+$color-secondary-2: hsl(28, 10%, 53%);
+$color-light-1: hsl(27, 66%, 92%);
+$color-light-2: hsl(33, 100%, 98%);
+$Font1: 'DM Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $Font1;
+  background-color: $color-light-1;
+}
+
+

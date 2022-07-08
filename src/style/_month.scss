@@ -1,0 +1,49 @@
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    position: absolute;
+    height: auto;
+    padding: 10px 40px 10px 0;
+    bottom: 20px;
+    &__total {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        h2 {
+            margin: 0;
+        }
+        &--title {
+            font-size: 15px;
+            font-weight: 400;
+            color: $color-secondary-1;
+        }
+    }
+    &__percent {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        p, h2 {
+            margin: 0;
+        }
+        &--dif {
+            font-size: 12px;
+            text-align: end;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+@media screen and (min-width: 860px) {
+    .month {
+        position: absolute;
+        height: auto;
+        padding: 10px 40px 10px 0;
+        bottom: 10px;
+    }
+}
